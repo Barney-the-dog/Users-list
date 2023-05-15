@@ -7,7 +7,7 @@ function Userlist({users}) {
         <div className='card-container'>
             {users.map((user) => (
               <div key={user.id + Math.random()}>
-                <Users users={users}/>
+                <Users users={user}/>
               </div>
             ))}
           </div>
