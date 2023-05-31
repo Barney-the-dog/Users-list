@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header/Header';
 import Userlist from './components/Userlist/Userlist';
 import React, { useState, useEffect } from 'react'
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -22,7 +24,8 @@ function add() {
   return (
     <>
     <Header add={add}/>
-    <Userlist users={users}/>
+    <Main users={users}/>
+    <Footer />
     </>
   );
 }
